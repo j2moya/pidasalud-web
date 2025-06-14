@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Libros - PidaSalud</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8fafc; color: #333; }
+    header { background: #2563eb; color: white; padding: 1.5rem; text-align: center; }
+    .container { max-width: 1100px; margin: 2rem auto; padding: 1rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.1); display: flex; flex-direction: column; }
+    .card img { width: 100%; height: 300px; object-fit: cover; }
+    .card-body { padding: 1rem; flex-grow: 1; display: flex; flex-direction: column; }
+    .card-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem; color: #1a202c; }
+    .card-description { font-size: 0.95rem; color: #4a5568; margin-bottom: 1rem; }
+    .card-price { font-size: 1rem; color: #2563eb; font-weight: bold; margin-bottom: 1rem; }
+    .btn { background: #2563eb; color: white; padding: 0.6rem 1rem; text-align: center; border-radius: 8px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
+    .btn:hover { background: #1e40af; }
+    .top-links { text-align: center; margin-bottom: 2rem; }
+    .top-links a { color: #2563eb; font-weight: bold; text-decoration: none; }
+    .top-links a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div id="google_translate_element"></div>
+
+  <header>
+    <h1>Libros Disponibles</h1>
+  </header>
+
+  <div style="text-align: center; margin: 1.5rem 0;">
+    <a href="https://pidasalud.com" 
+       style="text-decoration: none; 
+              color: #0056d2; 
+              font-weight: bold; 
+              font-size: 1.1rem; 
+              display: inline-flex; 
+              align-items: center;
+              gap: 0.5rem;
+              transition: color 0.3s;">
+      <i class="fas fa-home"></i> Inicio | Home
+    </a>
+  </div>
+
+  <script>
+    const link = document.querySelector('a[href="https://pidasalud.com"]');
+    if (link) {
+      link.addEventListener('mouseover', () => link.style.color = '#003580');
+      link.addEventListener('mouseout', () => link.style.color = '#0056d2');
+    }
+  </script>
+
+<div class="container">
+  <div class="top-links">
+    🔹 <a href="/amazon/en/">Read Books in English</a>
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="/amazon/img/por_que_tengo_libro.png" alt="¿Por qué tengo una condición más común en niños?">
+      <div class="card-body">
+        <div class="card-title">¿Por qué tengo una condición más común en niños?</div>
+        <div class="card-description">Qué significa que otros lo manifiestan en la adultez.</div>
+        <div class="card-price">$29.99</div>
+        <a href="https://a.co/d/8Oi4I1J" target="_blank" class="btn">Ver en Amazon</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/amazon/img/mi_hijo_tiene_libro.png" alt="Mi hijo(a) presenta una condición inmune.">
+      <div class="card-body">
+        <div class="card-title">Mi hijo(a) presenta una condición inmune.</div>
+        <div class="card-description">Qué debes hacer y qué no hacer para ayudarle.</div>
+        <div class="card-price">$29.99</div>
+        <a href="https://a.co/d/4GVOz7R" target="_blank" class="btn">Ver en Amazon</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/amazon/img/la_batalla_invisible_libro.png" alt="La batalla invisible.">
+      <div class="card-body">
+        <div class="card-title">La batalla invisible.</div>
+        <div class="card-description">Vivir con Vitiligo y condiciones relacionadas.</div>
+        <div class="card-price">$9.99</div>
+        <a href="https://a.co/d/giJXvl3" target="_blank" class="btn">Ver en Amazon</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/amazon/img/una_familia_saludable_libro.png" alt="Una familia sana.">
+      <div class="card-body">
+        <div class="card-title">Una familia sana.</div>
+        <div class="card-description">Exámenes médicos recomendados para cada grupo de edad.</div>
+        <div class="card-price">$9.99</div>
+        <a href="https://a.co/d/gRNYFgB" target="_blank" class="btn">Ver en Amazon</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/amazon/img/no_mas_vitiligo_libro.png" alt="No Más Vitiligo">
+      <div class="card-body">
+        <div class="card-title">No Más Vitiligo</div>
+        <div class="card-description">Controle usted mismo el Vitiligo con mi ayuda.</div>
+        <div class="card-price">$34.99</div>
+        <a href="https://a.co/d/5p5R4aY" target="_blank" class="btn">Ver en Amazon</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/amazon/img/la_calidad_de_vida_v1.png" alt="Calidad de vida">
+      <div class="card-body">
+        <div class="card-title">Calidad de vida</div>
+        <div class="card-description">A todos aquellos que están en camino hacia una mejor calidad de vida.</div>
+        <div class="card-price">$14.99</div>
+        <a href="https://a.co/d/dgmEW2Z" target="_blank" class="btn">Ver en Amazon</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
