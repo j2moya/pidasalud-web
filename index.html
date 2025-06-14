@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PidaSalud | Tu bienestar es nuestra prioridad</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f8fafc; color: #333; }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+      url('https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&q=80&w=2070') no-repeat center/cover;
+      height: 60vh;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; color: white;
+      text-align: center; padding: 1rem;
+      position: relative;
+    }
+    header h1 { font-size: 3rem; margin: 0.5rem 0; }
+    header p { font-size: 1.5rem; }
+    .button-primary {
+      background: white; color: #2563eb; padding: 0.8rem 2rem; margin-top: 1.5rem; border-radius: 9999px; font-weight: bold; text-decoration: none;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+    }
+    .section { padding: 3rem 1rem; text-align: center; }
+    .social-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; max-width: 800px; margin: 2rem auto; }
+    .social-button {
+      display: flex; flex-direction: column; align-items: center; justify-content: center; background: #2563eb; color: white;
+      padding: 1rem; border-radius: 10px; text-decoration: none; font-weight: bold; transition: transform 0.3s;
+    }
+    .social-button:hover { transform: scale(1.05); }
+    footer { background: #e2e8f0; padding: 2rem 1rem; text-align: center; font-size: 0.9rem; color: #555; }
+    iframe { width: 100%; height: 300px; border: none; border-radius: 10px; }
+    #whatsapp-btn {
+      position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white;
+      padding: 0.8rem 1rem; border-radius: 50px; font-weight: bold; text-decoration: none;
+      display: flex; align-items: center; box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      z-index: 999;
+    }
+    #google_translate_element { position: fixed; top: 10px; right: 50px; z-index: 1000; font-size: 0; }
+    #language-indicator {
+      position: fixed; top: 16px; right: 15px; z-index: 1000;
+      font-size: 14px; color: #000; font-family: Arial, sans-serif;
+      background: white; padding: 2px 6px; border-radius: 6px; box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="google_translate_element"></div>
+  <div id="language-indicator">A あ</div>
+
+  <header>
+    <h1>PidaSalud</h1>
+    <p>Tu bienestar es nuestra prioridad</p>
+    <a href="https://aahhoo.com/member/" target="_blank" class="button-primary">
+      <span>&#128101;</span> AAHHOO's Member
+    </a>
+  </header>
+
+  <section class="section">
+    <h2>Agenda tu Cita</h2>
+    <p>Reserva tu consulta de manera fácil y rápida</p>
+    <a href="https://calendly.com/aahhoo/citas" target="_blank" class="button-primary">
+      &#128197; Agendar Cita
+    </a>
+  </section>
+
+  <section class="section">
+    <h2>Síguenos en nuestras redes</h2>
+    <div class="social-grid">
+      <a href="https://www.instagram.com/pidasalud" target="_blank" class="social-button" style="background: linear-gradient(#833ab4, #fd1d1d, #fcb045);">Instagram</a>
+      <a href="https://www.youtube.com/subscription_center?add_user=PidaSalud" target="_blank" class="social-button" style="background: #FF0000;">YouTube</a>
+      <a href="https://x.com/pidasalud" target="_blank" class="social-button" style="background: #000000;">X (Twitter)</a>
+      <a href="https://www.facebook.com/pidasalud" target="_blank" class="social-button" style="background: #1877f2;">Facebook</a>
+      <a href="https://wa.me/17865644249?text=Bienvenido%20a%20PidaSalud.com" target="_blank" class="social-button" style="background: #25d366;">WhatsApp</a>
+      <a href="https://amazon.com/author/josemoya" target="_blank" class="social-button" style="background: #ff9900;">Amazon</a>
+      <a href="/amazon/" class="social-button" style="background: #34d399;">📚 Libros</a> <!-- Aquí lo agregamos -->
+      <a href="https://open.spotify.com/show/2ulPvbXVQt4EkWAKJprAx7" target="_blank" class="social-button" style="background: #1db954;">Spotify</a>
+      <a href="https://aahhoo.com" target="_blank" class="social-button" style="background: #2563eb;">AAHHOO</a>
+    </div>
+    
+    
+  </section>
+
+  <section class="section">
+    <h2>Visítanos</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.8876144674174!2d-80.28669492414736!3d25.78531597935983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b9c2faa5f3cf%3A0x7875e0fb7d96a742!2s5201%20Blue%20Lagoon%20Dr%2C%20Miami%2C%20FL%2033126!5e0!3m2!1ses-419!2sus!4v1709901234567!5m2!1ses-419!2sus" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <a id="whatsapp-btn" href="https://wa.me/17865644249?text=Bienvenido%20a%20PidaSalud.com" target="_blank">WhatsApp</a>
+
+  <footer>
+    &copy; 2024 PidaSalud Corp. Todos los derechos reservados.
+  </footer>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'es',
+        layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+      }, 'google_translate_element');
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

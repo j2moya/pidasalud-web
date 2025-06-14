@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PidaSalud | Books in English</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f8fafc; color: #333; }
+    header { background: #2563eb; color: white; padding: 1.5rem; text-align: center; }
+    .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
+    .switch-lang { text-align: center; margin-bottom: 2rem; }
+    .switch-lang a { color: #2563eb; text-decoration: none; font-weight: bold; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    .card { background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.05); padding: 1rem; text-align: center; }
+    .card img { width: 100%; height: auto; border-radius: 8px; }
+    .card h3 { margin: 0.8rem 0 0.4rem; color: #1e293b; font-size: 1.2rem; }
+    .card p { font-size: 0.95rem; color: #555; margin-bottom: 0.5rem; }
+    .price { font-weight: bold; color: #2563eb; margin-bottom: 0.5rem; }
+    .card a { display: inline-block; margin-top: 0.5rem; background: #2563eb; color: white; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; font-weight: bold; }
+    footer { background: #e2e8f0; text-align: center; padding: 1rem; margin-top: 3rem; font-size: 0.9rem; color: #555; }
+  </style>
+</head>
+<body>
+  <div id="google_translate_element"></div>
+
+  <header>
+    <h1>PidaSalud</h1>
+    <p>Books for a Better Life</p>
+  </header>
+
+  <div style="text-align: center; margin: 1.5rem 0;">
+    <a href="https://pidasalud.com" 
+       style="text-decoration: none; 
+              color: #0056d2; 
+              font-weight: bold; 
+              font-size: 1.1rem; 
+              display: inline-flex; 
+              align-items: center;
+              gap: 0.5rem;
+              transition: color 0.3s;">
+      <i class="fas fa-home"></i> Home | Inicio
+    </a>
+  </div>
+
+  <script>
+    const link = document.querySelector('a[href="https://pidasalud.com"]');
+    if (link) {
+      link.addEventListener('mouseover', () => link.style.color = '#003580');
+      link.addEventListener('mouseout', () => link.style.color = '#0056d2');
+    }
+  </script>
+
+  
+
+    <div class="grid">
+      <div class="card">
+        <img src="/amazon/img/a-healthy-family-book.png" alt="A Healthy Family">
+        <h3>A Healthy Family</h3>
+        <p>Recommended Medical Exams for Every Age Group</p>
+        <div class="price">$34.99</div>
+        <a href="https://a.co/d/47IV7rC" target="_blank">View on Amazon</a>
+      </div>
+      <div class="card">
+        <img src="/amazon/img/the_unseen_battle.png" alt="The Unseen Battle">
+        <h3>The Unseen Battle</h3>
+        <p>Living with Vitiligo and Related Conditions</p>
+        <div class="price">$9.99</div>
+        <a href="https://a.co/d/6eXScVd" target="_blank">View on Amazon</a>
+      </div>
+      <div class="card">
+        <img src="/amazon/img/no_more_vitiligo.png" alt="No More Vitiligo">
+        <h3>No More Vitiligo</h3>
+        <p>A comprehensive guide to understanding and managing vitiligo</p>
+        <div class="price">$34.99</div>
+        <a href="https://a.co/d/j0sAzNP" target="_blank">View on Amazon</a>
+      </div>
+      <div class="card">
+        <img src="/amazon/img/the_quality_of-life_v1.png" alt="Quality of Life">
+        <h3>Quality of Life</h3>
+        <p>To all those who are on a journey towards a better quality of life</p>
+        <div class="price">$14.99</div>
+        <a href="https://a.co/d/aq5iGDG" target="_blank">View on Amazon</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 PidaSalud Corp. All rights reserved.
+  </footer>
+</body>
+</html>
